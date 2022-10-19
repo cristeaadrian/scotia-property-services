@@ -212,28 +212,61 @@
 
           <!-- Contact form -->
           <div class="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
-            <h3 class="text-lg font-medium text-stone-900">
-              Send us a message
-            </h3>
-            <div class="my-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <RadioGroup v-model="selectedQueryType" class="w-full">
+              <RadioGroupLabel
+                class="text-base text-lg font-medium text-stone-900"
+                >Please select your query type
+              </RadioGroupLabel>
               <div
-                v-for="query in queryTypes"
-                :key="query.title"
-                class="relative flex items-center rounded-md border border-stone-300 px-6 py-5 shadow-sm space-x-3 hover:border-teal-500 hover:ring-teal-500"
+                class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4"
               >
-                <div class="min-w-0 flex-1">
-                  <div class="focus:outline-none">
-                    <span class="absolute inset-0" aria-hidden="true" />
-                    <p class="font-medium text-stone-900 text-md">
-                      {{ query.title }}
-                    </p>
-                    <p class="truncate text-sm text-stone-500">
-                      {{ query.description }}
-                    </p>
+                <RadioGroupOption
+                  v-for="queryType in queryTypes"
+                  :key="queryType.title"
+                  v-slot="{ checked, active }"
+                  as="template"
+                  :value="queryType"
+                >
+                  <div
+                    :class="[
+                      checked ? 'border-transparent' : 'border-stone-300',
+                      active ? 'border-teal-500 ring-2 ring-teal-500' : '',
+                      'relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none',
+                    ]"
+                  >
+                    <span class="flex flex-1">
+                      <span class="flex flex-col">
+                        <RadioGroupLabel
+                          as="span"
+                          class="block text-sm font-medium text-stone-900"
+                          >{{ queryType.title }}</RadioGroupLabel
+                        >
+                        <RadioGroupDescription
+                          as="span"
+                          class="mt-1 flex items-center text-sm text-stone-500"
+                          >{{ queryType.description }}</RadioGroupDescription
+                        >
+                      </span>
+                    </span>
+                    <CheckCircleIcon
+                      :class="[
+                        !checked ? 'invisible' : '',
+                        'h-5 w-5 text-teal-600',
+                      ]"
+                      aria-hidden="true"
+                    />
+                    <span
+                      :class="[
+                        active ? 'border' : 'border-2',
+                        checked ? 'border-teal-500' : 'border-transparent',
+                        'pointer-events-none absolute -inset-px rounded-lg',
+                      ]"
+                      aria-hidden="true"
+                    />
                   </div>
-                </div>
+                </RadioGroupOption>
               </div>
-            </div>
+            </RadioGroup>
             <form
               action="#"
               method="POST"
@@ -364,6 +397,14 @@
 
 <script setup>
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/vue/24/outline";
+import { ref } from "vue";
+import {
+  RadioGroup,
+  RadioGroupDescription,
+  RadioGroupLabel,
+  RadioGroupOption,
+} from "@headlessui/vue";
+import { CheckCircleIcon } from "@heroicons/vue/20/solid";
 
 const queryTypes = [
   {
@@ -382,6 +423,11 @@ const queryTypes = [
     title: "Claim",
     description: "Description goes here",
   },
-  // More people...
+  {
+    title: "Stolen item",
+    description: "Description goes here",
+  },
 ];
+
+const selectedQueryType = ref(queryTypes[0]);
 </script>

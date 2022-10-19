@@ -4,7 +4,7 @@
     <main class="overflow-hidden">
       <FAQ />
       <div class="bg-stone-50">
-        <div class="py-24 lg:py-32">
+        <div class="py-14 lg:py-20">
           <div
             class="relative z-10 mx-auto max-w-7xl pr-8 pl-4 sm:px-6 lg:px-8"
           >
