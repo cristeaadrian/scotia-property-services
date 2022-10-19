@@ -54,12 +54,12 @@
               <div class="h-0 flex-1 overflow-y-auto pt-5 pb-4">
                 <div class="flex flex-shrink-0 items-center px-4">
                   <img
-                    class="h-18 w-auto"
+                    class="w-auto h-18"
                     src="./assets/logo.png"
                     alt="Scotia Property Services"
                   />
                 </div>
-                <nav class="mt-10 space-y-1 px-2">
+                <nav class="mt-10 px-2 space-y-1">
                   <a
                     v-for="item in navigation"
                     :key="item.name"
@@ -103,12 +103,12 @@
         <div class="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
           <div class="flex flex-shrink-0 items-center px-4">
             <img
-              class="h-18 w-auto"
+              class="w-auto h-18"
               src="./assets/logo.png"
               alt="Scotia Property Services"
             />
           </div>
-          <nav class="mt-10 flex-1 space-y-1 bg-white px-2">
+          <nav class="mt-10 flex-1 bg-white px-2 space-y-1">
             <a
               v-for="item in navigation"
               :key="item.name"
@@ -138,7 +138,7 @@
     </div>
     <div class="flex flex-1 flex-col md:pl-64">
       <div
-        class="sticky top-0 z-10 bg-white pl-1 pt-1 sm:pl-3 sm:pt-3 md:hidden"
+        class="sticky top-0 z-10 bg-white pt-1 pl-1 sm:pt-3 sm:pl-3 md:hidden"
       >
         <button
           type="button"

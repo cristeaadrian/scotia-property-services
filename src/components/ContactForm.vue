@@ -1,12 +1,10 @@
 <template>
   <div class="relative bg-white">
     <div class="absolute inset-0">
-      <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
+      <div class="absolute inset-y-0 left-0 w-1/2" />
     </div>
-    <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-      <div
-        class="bg-white py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12"
-      >
+    <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-3 lg:gap-8">
+      <div class="px-4 py-6 sm:px-6 lg:px-8 xl:pr-12">
         <div class="mx-auto max-w-lg">
           <h2
             class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl"
@@ -55,9 +53,7 @@
           </p>
         </div>
       </div>
-      <div
-        class="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12"
-      >
+      <div class="bg-white py-6 lg:col-span-2">
         <div class="mx-auto max-w-lg lg:max-w-none">
           <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
             <div>
@@ -67,7 +63,7 @@
                 type="text"
                 name="full-name"
                 autocomplete="name"
-                class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                class="block w-full rounded-md border-gray-300 px-4 py-3 shadow-sm placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Full name"
               />
             </div>
@@ -78,7 +74,7 @@
                 name="email"
                 type="email"
                 autocomplete="email"
-                class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                class="block w-full rounded-md border-gray-300 px-4 py-3 shadow-sm placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Email"
               />
             </div>
@@ -89,7 +85,7 @@
                 type="text"
                 name="phone"
                 autocomplete="tel"
-                class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                class="block w-full rounded-md border-gray-300 px-4 py-3 shadow-sm placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Phone"
               />
             </div>
@@ -99,14 +95,14 @@
                 id="message"
                 name="message"
                 rows="4"
-                class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                class="block w-full rounded-md border-gray-300 px-4 py-3 shadow-sm placeholder-gray-500 focus:border-indigo-500 focus:ring-indigo-500"
                 placeholder="Message"
               />
             </div>
             <div>
               <button
                 type="submit"
-                class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Submit
               </button>
