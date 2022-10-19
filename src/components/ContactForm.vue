@@ -1,4 +1,20 @@
 <template>
+  <section class="bg-stone-50 pb-6">
+    <div class="py-14 lg:py-20">
+      <div class="relative z-10 mx-auto max-w-7xl pr-8 pl-4 sm:px-6 lg:px-8">
+        <h1
+          class="text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl"
+        >
+          Get in touch
+        </h1>
+        <p class="mt-6 max-w-3xl text-xl text-stone-500">
+          Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus
+          morbi non morbi. In elementum urna ut volutpat. Sagittis et vel et
+          fermentum amet consequat.
+        </p>
+      </div>
+    </div>
+  </section>
   <section class="relative bg-white" aria-labelledby="contact-heading">
     <div class="absolute h-1/2 w-full bg-stone-50" aria-hidden="true" />
     <!-- Decorative dot pattern -->
@@ -344,15 +360,64 @@
               </div>
               <div class="sm:col-span-2">
                 <label
-                  for="subject"
+                  for="address-1"
                   class="block text-sm font-medium text-stone-900"
-                  >Subject</label
+                  >Address Line 1</label
                 >
                 <div class="mt-1">
                   <input
-                    id="subject"
+                    id="address-1"
                     type="text"
-                    name="subject"
+                    name="address-1"
+                    autocomplete="address-line-1"
+                    class="block w-full rounded-md border-stone-300 px-4 py-3 text-stone-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label
+                  for="address-2"
+                  class="block text-sm font-medium text-stone-900"
+                  >Address Line 2</label
+                >
+                <div class="mt-1">
+                  <input
+                    id="address-2"
+                    type="text"
+                    name="address-2"
+                    autocomplete="address-line-2"
+                    class="block w-full rounded-md border-stone-300 px-4 py-3 text-stone-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="city"
+                  class="block text-sm font-medium text-stone-900"
+                  >City</label
+                >
+                <div class="mt-1">
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    autocomplete="city"
+                    class="block w-full rounded-md border-stone-300 px-4 py-3 text-stone-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="postcode"
+                  class="block text-sm font-medium text-stone-900"
+                  >Postcode</label
+                >
+                <div class="mt-1">
+                  <input
+                    id="postcode"
+                    type="text"
+                    name="postcode"
+                    autocomplete="postal-code"
                     class="block w-full rounded-md border-stone-300 px-4 py-3 text-stone-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
                   />
                 </div>
@@ -360,22 +425,24 @@
               <div class="sm:col-span-2">
                 <div class="flex justify-between">
                   <label
-                    for="message"
+                    for="additional-information"
                     class="block text-sm font-medium text-stone-900"
                     >Additional information</label
                   >
-                  <span id="message-max" class="text-sm text-stone-500"
+                  <span
+                    id="additional-information-max"
+                    class="text-sm text-stone-500"
                     >Max. 500 characters (will be appended to the end of the
                     email)</span
                   >
                 </div>
                 <div class="mt-1">
                   <textarea
-                    id="message"
-                    name="message"
+                    id="additional-information"
+                    name="additional-information"
                     rows="4"
                     class="block w-full rounded-md border-stone-300 px-4 py-3 text-stone-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
-                    aria-describedby="message-max"
+                    aria-describedby="additional-information-max"
                   />
                 </div>
               </div>
@@ -384,7 +451,7 @@
                   type="submit"
                   class="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:w-auto"
                 >
-                  Submit
+                  Send email
                 </button>
               </div>
             </form>
