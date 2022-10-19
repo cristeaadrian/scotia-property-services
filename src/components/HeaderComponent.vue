@@ -34,7 +34,7 @@
               v-for="item in navigation"
               :key="item.name"
               :href="item.href"
-              class="text-base font-medium text-stone-500 hover:text-stone-900"
+              class="text-base text-2xl font-medium text-stone-500 hover:text-stone-900"
               >{{ item.name }}</a
             >
           </div>
