@@ -47,7 +47,7 @@
           <p class="mt-6 text-base text-gray-500">
             Looking for careers?
             {{ " " }}
-            <a href="#" class="font-medium text-gray-700 underline"
+            <a href="#" class="font-medium text-lime-600"
               >View all job openings</a
             >.
           </p>
@@ -102,7 +102,7 @@
             <div>
               <button
                 type="submit"
-                class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                class="inline-flex justify-center rounded-md border border-transparent bg-lime-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 Submit
               </button>

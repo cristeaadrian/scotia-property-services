@@ -8,9 +8,7 @@
           </h2>
           <p class="mt-4 text-lg text-gray-500">
             Can’t find the answer you’re looking for? Reach out to our
-            <a
-              href="#"
-              class="font-medium text-indigo-600 hover:text-indigo-500"
+            <a href="#" class="font-medium text-lime-600 hover:text-lime-500"
               >customer support</a
             >
             team.
