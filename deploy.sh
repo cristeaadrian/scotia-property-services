@@ -15,6 +15,7 @@ echo > .nojekyll
 # if you are deploying to a custom domain
 #echo 'example.com' > CNAME
 
+git init
 git checkout -B master
 git add -A
 git commit -m 'deploy'
