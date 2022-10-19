@@ -1,14 +1,18 @@
 <template>
-  <div class="bg-white">
-    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+  <div class="bg-stone-50">
+    <div
+      class="mx-auto max-w-md py-24 px-4 sm:max-w-3xl sm:py-32 sm:px-6 lg:max-w-7xl lg:px-8"
+    >
       <div class="lg:grid lg:grid-cols-3 lg:gap-8">
         <div>
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+          <h1
+            class="text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl"
+          >
             Frequently asked questions
-          </h2>
-          <p class="mt-4 text-lg text-gray-500">
+          </h1>
+          <p class="mt-8 text-lg text-stone-500">
             Can’t find the answer you’re looking for? Reach out to our
-            <a href="#" class="font-medium text-lime-600 hover:text-lime-500"
+            <a href="#" class="font-medium text-teal-500 hover:text-teal-600"
               >customer support</a
             >
             team.
@@ -16,11 +20,13 @@
         </div>
         <div class="mt-12 lg:col-span-2 lg:mt-0">
           <dl class="space-y-12">
-            <div v-for="faq in faqs" :key="faq.question">
-              <dt class="text-lg font-medium leading-6 text-gray-900">
+            <div v-for="faq in faqs" :key="faq.id">
+              <dt class="text-lg font-medium text-stone-900">
                 {{ faq.question }}
               </dt>
-              <dd class="mt-2 text-base text-gray-500">{{ faq.answer }}</dd>
+              <dd class="mt-2 text-base text-stone-500">
+                {{ faq.answer }}
+              </dd>
             </div>
           </dl>
         </div>
