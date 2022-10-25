@@ -4,7 +4,7 @@
 
 ## Run locally
 
-To run this project locally, clone the repository, install the latest version of `Node.js` and `npm` then follow these
+To run this project locally, clone the repository, install the latest version of `Node.js` and `npm`, then follow these
 steps:
 
 - `npm install`
