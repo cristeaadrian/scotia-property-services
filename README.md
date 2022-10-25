@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# Scotia Property Services
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![Deploy to Github Pages](https://github.com/cristeaadrian/scotia-property-services/actions/workflows/deploy-to-pages.yml/badge.svg?branch=master)](https://github.com/cristeaadrian/scotia-property-services/actions/workflows/deploy-to-pages.yml)
 
-## Recommended IDE Setup
+## Run locally
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+To run this project locally, clone the repository, install the latest version of `Node.js` and `npm` then follow these
+steps:
+
+- `npm install`
+- `npm run dev`
+
+This should display a local version of the site at `localhost:5173/scotia-property-services`
